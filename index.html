@@ -1798,10 +1798,8 @@ function produto_menu() {
  */
 function produto_admin_paths() {
   $paths = array(
-    'produto/add' => TRUE,
-    'produto/add/*' => TRUE,
-    'produto/*/edit' => TRUE,
-    'produto/*/delete' => TRUE,
+    'produto/add*' => TRUE,
+    'produto/*/*' => TRUE,
   );
   return $paths;
 }
